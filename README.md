@@ -7,6 +7,7 @@ Are you waiting for a URL to come online? Well, instead of just refereshing fore
 * `node`
 
 ## Setup
-Install this into crontab with a line like this:
+* Create `.env` file with all the necessary data (based on `sample.env` file)
+* Install this into crontab with a line like this:
 
 `*/5 * * * * /complete/path/to/node /complete/path/to/check_website.js >> /tmp/check_website.log`
