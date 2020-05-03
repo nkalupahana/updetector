@@ -1,5 +1,5 @@
 const {exec} = require('child_process');
-require('dotenv').config();
+require('dotenv').config({ path: `${__dirname}/.env` });
 
 const executionID = Math.random().toFixed(5).split(".")[1];
 function log(message) {
@@ -32,7 +32,8 @@ exec(`curl ${process.env.URL}`, (_err, stdout, _stderr) => {
             PhoneNumber: process.env.PHONE,
         };
 
-        sns.publish(params).promise().then(() => {
+        let p = sns.publish(params).promise();
+        p.then(() => {
             log("Text sent!");
         });
     }
