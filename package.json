@@ -1,0 +1,20 @@
+{
+  "name": "updetector",
+  "version": "1.0.0",
+  "description": "Get a text when a URL comes up!",
+  "main": "check_website.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nkalupahana/updetector.git"
+  },
+  "author": "Nisala Kalupahana",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/nkalupahana/updetector/issues"
+  },
+  "homepage": "https://github.com/nkalupahana/updetector#readme",
+  "dependencies": {
+    "aws-sdk": "^2.668.0",
+    "dotenv": "^8.2.0"
+  }
+}
