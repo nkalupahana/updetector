@@ -4,7 +4,7 @@ Are you waiting for a URL to come online? Well, instead of just refereshing fore
 
 ## Requirements
 * AWS IAM account with SNS write policy
-* `node`
+* `node` and `npm`
 * `curl`
 
 ## Setup
